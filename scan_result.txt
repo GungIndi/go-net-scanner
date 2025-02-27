@@ -1,0 +1,138 @@
+
+[2025-02-27 15:39:37] New scan result for scanme.nmap.org...
+
+Port 53 is Open! : 191.028071ms
+Port 110 is Closed! : 557.731751ms
+Port 135 is Closed! : 557.85909ms
+Port 143 is Closed! : 565.483534ms
+Port 79 is Closed! : 570.911371ms
+Port 443 is Closed! : 570.889586ms
+Port 5432 is Closed! : 570.974243ms
+Port 22 is Open! : 571.152436ms
+Port 445 is Closed! : 573.869638ms
+Port 3306 is Closed! : 575.151277ms
+Port 69 is Closed! : 577.075602ms
+Port 80 is Open! : 583.535159ms
+Port 6379 is Closed! : 586.714815ms
+Port 23 is Closed! : 586.788446ms
+Port 27017 is Closed! : 586.73078ms
+Port 3389 is Closed! : 589.588212ms
+Port 2049 is Closed! : 590.674085ms
+Port 139 is Closed! : 590.946656ms
+Port 21 is Closed! : 602.084848ms
+Port 25 is Closed! : 962.653532ms
+
+[2025-02-27 15:40:09] New scan result for scanme.nmap.org...
+
+Port 53 is Open! : 48.855419ms
+Port 69 is Closed! : 376.904867ms
+Port 110 is Closed! : 376.928558ms
+Port 21 is Closed! : 379.22448ms
+Port 27017 is Closed! : 382.540032ms
+Port 80 is Open! : 382.618287ms
+Port 3306 is Closed! : 382.600407ms
+Port 2049 is Closed! : 382.604535ms
+Port 25 is Closed! : 383.272648ms
+Port 139 is Closed! : 385.020449ms
+Port 23 is Closed! : 387.186198ms
+Port 443 is Closed! : 389.218456ms
+Port 143 is Closed! : 390.846479ms
+Port 79 is Closed! : 393.466654ms
+Port 3389 is Closed! : 398.194861ms
+Port 135 is Closed! : 398.190642ms
+Port 22 is Open! : 398.256043ms
+Port 6379 is Closed! : 495.838846ms
+Port 5432 is Closed! : 703.604122ms
+Port 445 is Closed! : 731.271041ms
+
+[2025-02-27 15:40:52] New scan result for scanme.nmap.org...
+
+Port 53 is Open! : 13.788744ms
+Port 139 is Closed! : 338.626288ms
+Port 3389 is Closed! : 347.096075ms
+Port 21 is Closed! : 347.219947ms
+Port 3306 is Closed! : 350.061597ms
+Port 135 is Closed! : 350.116331ms
+Port 23 is Closed! : 352.503326ms
+Port 22 is Open! : 352.511541ms
+Port 79 is Closed! : 355.964693ms
+Port 6379 is Closed! : 361.824481ms
+Port 5432 is Closed! : 364.676463ms
+Port 445 is Closed! : 364.727642ms
+Port 143 is Closed! : 368.136104ms
+Port 110 is Closed! : 373.167233ms
+Port 80 is Open! : 373.195164ms
+Port 27017 is Closed! : 375.972961ms
+Port 69 is Closed! : 379.153981ms
+Port 443 is Closed! : 404.483479ms
+Port 25 is Closed! : 690.329591ms
+Port 2049 is Closed! : 710.131459ms
+
+[2025-02-27 15:41:44] New scan result for scanme.nmap.org...
+
+Port 53 is Open! : 17.139788ms
+Port 22 is Open! : 352.98947ms
+Port 21 is Closed! : 377.900552ms
+Port 443 is Closed! : 380.757691ms
+Port 143 is Closed! : 382.130368ms
+Port 110 is Closed! : 382.13807ms
+Port 135 is Closed! : 383.753248ms
+Port 139 is Closed! : 387.673484ms
+Port 445 is Closed! : 387.720935ms
+Port 80 is Open! : 390.639328ms
+Port 5432 is Closed! : 392.103601ms
+Port 25 is Closed! : 392.146695ms
+Port 23 is Closed! : 399.75171ms
+Port 2049 is Closed! : 399.784159ms
+Port 3389 is Closed! : 399.900814ms
+Port 79 is Closed! : 399.948503ms
+Port 3306 is Closed! : 402.551334ms
+Port 6379 is Closed! : 403.925321ms
+Port 27017 is Closed! : 699.652129ms
+Port 69 is Closed! : 707.000512ms
+
+[2025-02-27 15:41:55] New scan result for scanme.nmap.org...
+
+Port 53 is Open! : 24.540469ms
+Port 27017 is Closed! : 345.199944ms
+Port 135 is Closed! : 365.179785ms
+Port 143 is Closed! : 371.72036ms
+Port 2049 is Closed! : 371.745754ms
+Port 21 is Closed! : 371.866831ms
+Port 110 is Closed! : 371.791734ms
+Port 6379 is Closed! : 371.7822ms
+Port 23 is Closed! : 371.881761ms
+Port 25 is Closed! : 372.31765ms
+Port 139 is Closed! : 372.948953ms
+Port 5432 is Closed! : 373.608423ms
+Port 22 is Open! : 378.026097ms
+Port 80 is Open! : 382.296008ms
+Port 3306 is Closed! : 384.885773ms
+Port 69 is Closed! : 389.48078ms
+Port 3389 is Closed! : 390.080417ms
+Port 79 is Closed! : 455.408113ms
+Port 443 is Closed! : 458.351348ms
+Port 445 is Closed! : 492.185939ms
+
+[2025-02-27 15:42:03] New scan result for scanme.nmap.org...
+
+Port 53 is Open! : 14.558396ms
+Port 69 is Closed! : 366.736712ms
+Port 135 is Closed! : 377.661988ms
+Port 6379 is Closed! : 377.856865ms
+Port 79 is Closed! : 379.106786ms
+Port 3389 is Closed! : 381.323942ms
+Port 22 is Open! : 381.341889ms
+Port 21 is Closed! : 384.284814ms
+Port 143 is Closed! : 387.15188ms
+Port 25 is Closed! : 387.233238ms
+Port 110 is Closed! : 392.40162ms
+Port 3306 is Closed! : 392.398128ms
+Port 5432 is Closed! : 392.62195ms
+Port 443 is Closed! : 397.906358ms
+Port 2049 is Closed! : 400.419773ms
+Port 27017 is Closed! : 402.557476ms
+Port 139 is Closed! : 402.802615ms
+Port 23 is Closed! : 491.843037ms
+Port 445 is Closed! : 735.471227ms
+Port 80 is Closed! : 1.007614059s
