@@ -10,8 +10,10 @@ import (
 func scanPort(p uint16, h string, c chan string, wg *sync.WaitGroup) {
 	t0 := time.Now()
 	defer wg.Done()
+
 	addr := fmt.Sprintf("%s:%d", h, p)
 	conn, err := net.DialTimeout("tcp", addr, time.Second*1)
+
 	if err != nil {
 		c <- fmt.Sprintf("Port %d is Closed! : %v", p, time.Since(t0))
 		return
