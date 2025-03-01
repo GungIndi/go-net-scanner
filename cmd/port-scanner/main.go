@@ -1,41 +1,42 @@
 package main
 
 import (
-	"flag"
-	"fmt"
+	"sync"
 	"time"
 
-	"github.com/gungindi/port-scanner/internal/data"
 	"github.com/gungindi/port-scanner/internal/scanner"
+	"github.com/gungindi/port-scanner/internal/tools"
 	log "github.com/sirupsen/logrus"
 )
 
 func main() {
+	wg := sync.WaitGroup{}
 	log.SetReportCaller(true)
 	t0 := time.Now()
 
-	var ports []uint16
+	var rp, rs []string
 
-	h := flag.String("host", "scanme.nmap.org", "Target host to scan")
-	p := flag.String("ports", "", "Comma-separated list of ports to scan (e.g. '22,80,443')")
-	flag.Parse()
+	subs, ports, h := tools.GetInput()
+	wg.Add(2)
 
-	fmt.Print(*p)
-	if *p != "" {
-		ports = data.ParsePortList(*p)
-	} else {
-		var err error
-		ports, err = data.GetPorts()
-		if err != nil {
-			log.Fatalf("Error retrieving ports: %v", err)
-		}
+	go func() {
+		defer wg.Done()
+		rp = scanner.ScanPorts(&h, &ports)
+	}()
+
+	go func() {
+		defer wg.Done()
+		rs = scanner.ScanSubdomains(&h, &subs)
+	}()
+
+	wg.Wait()
+	log.Infof("\nExecution time: %v\n", time.Since(t0))
+
+	err := tools.SaveResult(rs, h)
+	if err != nil {
+		log.Errorf("Failed to save scan results: %v", err)
 	}
-
-	r := scanner.ScanPorts(*h, &ports)
-
-	log.Infof("\nAll Port Scanned!\nExecution time: %v\n", time.Since(t0))
-
-	err := scanner.SaveResult(r, *h)
+	err = tools.SaveResult(rp, h)
 	if err != nil {
 		log.Errorf("Failed to save scan results: %v", err)
 	}
