@@ -1,4 +1,4 @@
-package scanner
+package tools
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ import (
 
 func SaveResult(r []string, h string) error {
 
-	o := "scan_result.txt"
+	o := "logs/scan_result.txt"
 	t := fmt.Sprintf("\n[%v] New scan result for %v...\n\n", time.Now().Format("2006-01-02 15:04:05"), h)
 
 	file, err := os.OpenFile(o, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
